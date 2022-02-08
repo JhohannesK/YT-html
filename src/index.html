@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body class="bg-gray-100">
-    <header class="bg-white">
-      <div class="flex justify-around items-center h-14">
+    <!-- header -->
+    <header class="bg-white divide-y ml-18">
+      <div class="flex justify-between items-center h-14 mx-4">
         <div>
           <img
             src="images/youtube.jpg"
@@ -26,19 +27,107 @@
             class="py-[18px] pt-[16px] pb-[14px]"
           />
         </div>
-        <div class="flex items-center justify-center">
-          <input
-            type="search"
-            placeholder="search"
-            class="border-gray-400 border h-8 px-[2px] py-[6px] focus:outline-none focus:border-blue-600"
-          />
-          <button
-            class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300"
-          >
-            <i class="material-icons p-4">search</i>
+        <div
+          class="flex items-center justify-center flex-grow w-full space-x-3"
+        >
+          <div class="flex items-center justify-center w-[60%]">
+            <input
+              type="search"
+              placeholder="search"
+              class="border-gray-400 border h-8 px-[2px] py-[6px] focus:outline-none focus:border-blue-600 w-full"
+            />
+            <button
+              class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300"
+            >
+              <i class="material-icons p-4">search</i>
+            </button>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="bg-gray-500 rounded-full h-8 w-8 flex items-center justify-center"
+            >
+              <i class="material-icons">mic</i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <button class="flex items-center justify-center space-x-4">
+            <i class="material-icons">video_call</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <div class="h-8 w-8 rounded-full bg-blue-500">
+              <img src="" alt="" />
+            </div>
           </button>
         </div>
       </div>
+      <div class="flex items-center px-2 py-3 space-x-4">
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >All</span
+        >
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >Computer engineering</span
+        >
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >Comedies</span
+        >
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >Real Madrid</span
+        >
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >Linux</span
+        >
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >Programming</span
+        >
+        <span
+          class="text-sm text-black bg-gray-400 border border-gray-800 rounded-xl px-1 py-1 hover:bg-gray-500"
+          >Windows</span
+        >
+      </div>
     </header>
+    <!-- End of header -->
+    <!-- side bar -->
+    <aside
+      class="fixed w-18 h-screen top-0 bg-white flex flex-col items-center mt-4"
+    >
+      <div>
+        <button>
+          <i class="material-icons">menu</i>
+        </button>
+      </div>
+      <div class="mt-6 w-full space-y-7">
+        <button
+          class="flex flex-col items-center justify-center w-full hover:bg-gray-200 text-red-600"
+        >
+          <i class="material-icons">home</i>
+          <span class="text-xs">Home</span>
+        </button>
+        <button
+          class="flex flex-col items-center justify-center w-full hover:bg-gray-200"
+        >
+          <i class="material-icons">explore</i>
+          <span class="text-xs">Explore</span>
+        </button>
+        <button
+          class="flex flex-col items-center justify-center w-full hover:bg-gray-200"
+        >
+          <i class="material-icons">subscriptions</i>
+          <span class="text-xs">Subscription</span>
+        </button>
+        <button
+          class="flex flex-col items-center justify-center w-full hover:bg-gray-200"
+        >
+          <i class="material-icons">video_library</i>
+          <span class="text-xs">Library</span>
+        </button>
+      </div>
+    </aside>
   </body>
 </html>
